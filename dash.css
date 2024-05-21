@@ -1,0 +1,567 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@700&display=swap');
+
+
+@font-face {
+    font-family: "Satoshi";
+    src: url(fonts/Satoshi-Variable.ttf)format('truetype');
+}
+@font-face {
+    font-family: "SegoeUI";
+    src: url(fonts/Segoe\ UI.ttf)format('truetype');
+}
+/* akhir font */
+
+/* Media querys */
+
+
+@media only screen and (min-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media only screen and (min-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/WhatsApp\ Image\ 2024-05-19\ at\ 10.01.30.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #B7A461 ;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.anarta {
+    font-family: "Playfair Display", serif;
+    background: #B7A461;
+    color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bahasa-btn {
+    font-family: "SegoeUI", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(64, 64, 64, 0.38);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+}
+
+.masuk-btn{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-family: "Satoshi", sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 850px;
+    margin-bottom: 40px;
+}
+
+.email-sign {
+    background: rgba(239, 239, 239, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.email-sign input {
+    color: #fff;
+    font-family: "Satoshi", sans-serif;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background: transparent;
+}
+
+.email-sign input::placeholder{
+    color: #fff;
+    font-family: "Satoshi", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.email-sign button {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    background: rgba(253, 107, 25, 0.9) ;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 15px 20px;
+};
+
+.features{
+    padding: 50px 12%;
+}
+
+/* ROW1 */
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(253, 107, 25, 0.9),rgba(253, 107, 25, 0));
+    background-size: cover;
+    font-family: "Satoshi", sans-serif;
+} 
+
+
+.text-col {
+    flex-basis: 50%;
+}
+
+.text-col h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text-col p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+.img-col {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    padding-left: 20%;
+}
+
+.img-col img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* ROW2 */
+
+.row2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    padding-top: 5%;
+    font-family: "Satoshi", sans-serif;
+} 
+
+.text-col2 {
+    flex-basis: 50%;
+    align-self: flex-start;
+    align-items: end;
+    padding-left: 15%;
+}
+
+.img2 img{
+    width: 400px;
+    height: 330px;
+}
+.img3 img{
+    width: 400px;
+    height: 230px;
+    margin-left: 50vh;
+    margin-top: 20vh;
+}
+
+
+.text-col2 h2{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.text-col2 p{
+    font-size: 30px;
+}
+
+
+.img-col2 {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-left: 15%;
+}
+
+.img-col2 img{
+    width: 300px;
+    height: 400px;
+}
+
+.img-col2 h4{
+    font-family: "Satoshi", sans-serif;
+    padding-left: 12%;
+    font-size: 20px;
+}
+
+.img-col2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Satoshi", sans-serif;
+    font-size: 15px;
+    padding-right: 60%;
+    padding-left: 5%;
+}
+
+
+/* row3 */
+.row3 {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(198, 84, 20, 1);
+    background-size: cover;
+    font-family: "Satoshi", sans-serif;
+} 
+
+
+.text-col3 {
+    flex-basis: 50%;
+    text-align: end;
+}
+
+.text-col3 h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text-col3 p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+/* End */
+
+.container {
+    background: url(/images/akhir.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container h2{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.row-card {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.container .row-card .card-col1{
+    text-align: center;
+}
+.container .row-card .card-col2{
+    text-align: center;
+}
+.container .row-card .card-col3{
+    text-align: center;
+}
+
+/* ukuran tengah 50% */
+.container .row-card .card-col1 img{
+    border-radius: 10px;
+    width: 100%;
+}
+.container .row-card .card-col2 img{
+    border-radius: 10px;
+    width: 100%;
+}
+.container .row-card .card-col3 img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card-col1 {
+    flex-basis: 300px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 50px;
+    /* background-image: linear-gradient(rgba(40, 35, 18, 1),rgba(183, 164, 97, 1));
+    border-radius: 10px; */
+}
+.card-col2 {
+    flex-basis: 400px;
+    margin-right: 40px;
+    margin-left: 40px;
+    /* background-image: linear-gradient(rgba(40, 35, 18, 1),rgba(183, 164, 97, 1));
+    border-radius: 10px; */
+}
+.card-col3 {
+    flex-basis: 300px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 50px;
+    /* background-image: linear-gradient(rgba(40, 35, 18, 1),rgba(183, 164, 97, 1));
+    border-radius: 10px; */
+}
+
+
+.card-col1 h3 {
+    font-family: "SegoeUI", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+.card-col2 h3 {
+    font-family: "SegoeUI", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+.card-col3 h3 {
+    font-family: "SegoeUI", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-col1 p{
+    font-family: "SegoeUI", sans-serif;
+    font-size: 13px;
+}
+.card-col2 p{
+    font-family: "SegoeUI", sans-serif;
+    font-size: 13px;
+}
+.card-col3 p{
+    font-family: "SegoeUI", sans-serif;
+    font-size: 13px;
+}
+
+.card-col1 .card-body {
+    background-color: rgba(116, 58, 25, 1);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.card-col3 .card-body {
+    background-color: rgba(116, 58, 25, 1);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.card-col2 .card-body {
+    background-color: rgba(183, 164, 97, 1);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-weight: 500;
+}
+
+.kata {
+    padding-top: 20px;
+    padding-bottom:20px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-img-dian {
+    height: 300px;
+    width: 300px;
+}
+
+.card-img-celsi {
+    height: 300px;
+    width: 300px;
+}
+
+.row-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 5%;
+}
+
+.row-foot .foot{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-image: linear-gradient(rgba(239, 239, 239, 0.15),rgba(239, 239, 239, 0.15));
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+    outline: #B7A461;
+
+}
+
+.foot .daftar {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    background: rgba(253, 107, 25, 0.9) ;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 25px 30px;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.foot h1{
+    font-family: "SegoeUI", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+/* ----Footer--- */
+footer{
+    background-image:linear-gradient(rgba(183, 164, 97, 1),rgba(40, 35, 18, 1)) ;
+    height: auto;
+    width: auto;
+    font-family: "Satoshi", sans-serif;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    padding-bottom: 5px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #000;
+}
+
+.socials a i{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.socials a:hover i{
+    color: red;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0 3rem 0;
+}
+
+.contact a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+}
+
+.contact a:hover {
+    color: #000;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
